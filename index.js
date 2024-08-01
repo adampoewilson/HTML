@@ -13,3 +13,5 @@ flashing those up constantly == annoying
 // to a website by those elements
 
 document.getElementById("myH1").textContent = "Hello!"
+
+document.getElementById("myP").textContent = "Welcome to my world!!!  Oooh!!!  Ooh!!  And I like pizza."
