@@ -3,5 +3,13 @@
 console.log(`Hello!!`);
 console.log(`I like pizza!!`)
 
-// Window alert
+/*
+Window alerts - commenting because
 
+flashing those up constantly == annoying
+*/
+
+// getting elements by ID and adding text
+// to a website by those elements
+
+document.getElementById("myH1").textContent = "Hello!"
