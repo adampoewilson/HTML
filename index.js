@@ -15,3 +15,11 @@ flashing those up constantly == annoying
 document.getElementById("myH1").textContent = "Hello!"
 
 document.getElementById("myP").textContent = "Welcome to my world!!!  Oooh!!!  Ooh!!  And I like pizza."
+
+let fullName = "Adam P"
+
+let age = 39
+
+document.getElementById("P1").textContent = fullName
+
+document.getElementById("P2").textContent = age
