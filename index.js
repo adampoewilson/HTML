@@ -20,6 +20,6 @@ let fullName = "Adam P";
 
 let age = 39;
 
-document.getElementById("P1").textContent = fullName;
+document.getElementById("P1").textContent = `Your name is ${fullName}`;
 
-document.getElementById("P2").textContent = age;
+document.getElementById("P2").textContent = `Your are ${age} years old`;
