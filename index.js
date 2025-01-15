@@ -1,25 +1,14 @@
-// Console logs
-
-console.log(`Hello!!`);
-console.log(`I like pizza!!`);
-
-/*
-Window alerts - commenting because
-
-flashing those up constantly == annoying
-*/
-
-// getting elements by ID and adding text
-// to a website by those elements
-
-document.getElementById("myH1").textContent = "Hello!";
-
-document.getElementById("myP").textContent = "Welcome to my world!!!  Oooh!!!  Ooh!!  And I like pizza.";
-
-let fullName = "Adam P";
-
-let age = 39;
-
-document.getElementById("P1").textContent = `Your name is ${fullName}`;
-
-document.getElementById("P2").textContent = `Your are ${age} years old`;
+// Fetch data from the Python backend
+fetch('/api/data')
+  .then(response => response.json()) // Convert response to JSON
+  .then(data => {
+    // Update HTML with dynamic data
+    document.getElementById("myH1").textContent = "Hello!";
+    document.getElementById("myP").textContent = "Welcome to my dynamic website!";
+    document.getElementById("P1").textContent = `Your name is ${data.fullName}`;
+    document.getElementById("P2").textContent = `You are ${data.age} years old`;
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+    document.getElementById("myH1").textContent = "Error loading data.";
+  });
